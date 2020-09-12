@@ -1,4 +1,4 @@
-import React,{Component, useState, useEffect} from 'react';
+import React,{ useState, useEffect} from 'react';
 import {connect} from 'react-redux'
 
 import Aux from '../../hoc/Aux';
@@ -18,9 +18,11 @@ const BurgerBuilder = props => {
 
     const [purchasing, setPurchasing] = useState(false);
 
+    const {onInitIngredients} = props;
+    
     useEffect(() => {
-        props.onInitIngredients();
-    }, [] );
+        onInitIngredients();
+    }, [onInitIngredients] );
 
     const updatePurchaseState = ingredients => {
         const sum = Object.keys(ingredients)
