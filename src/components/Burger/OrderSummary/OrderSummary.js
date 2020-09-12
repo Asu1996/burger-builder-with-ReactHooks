@@ -14,8 +14,8 @@ const orderSummary = (props)  => {
 
     return(
         <Aux>
-            <h3>Your Order-></h3>
-            <p>Ye sab hain isme -- >></p>
+            <h3>Your Order----</h3>
+            <p>Ye sab hain isme -----</p>
             <ul>
                 {ingredientSummary}
             </ul>
